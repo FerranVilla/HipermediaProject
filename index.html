@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        #main-content {
+            flex: 1; /* This pushes the footer to the bottom */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 { 
+            font-size: 3.5em;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.25em;
+        }
+        a {
+            font-size: 1.25em;
+            text-decoration: none;
+            margin-left: 10px;
+            color: black;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .image img {
+            border-radius: 5px;
+            max-width: 200px;
+            height: auto;
+        }
+        .apartadoBB {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .ContainerSongs {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 20px; 
+            justify-content: center; 
+            padding: 20px;
+        }
+        .songs ul {
+            display: contents;
+    
+        }
+        .songs li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .songs img {
+            width: 100%;
+            max-width: 150px; 
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: auto; /* Fa que el footer sempre es posi a la part inferior */
+}
+        @media (max-width: 768px) {
+    #containerVideos {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #contenidorAudio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenidorBotons {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VIDEOTEQUE</h1>
+    </header>
+
+    <section class="apartadoBB">
+        <div class="image">
+            <img src="images.jpg" alt="Bad Bunny image">
+        </div>
+        <div>
+            <h2>Bad Bunny</h2>
+            <p>
+                Benito Antonio Martínez Ocasio (Bayamón, 10 de març de 1994), conegut artísticament com Bad Bunny,<br> és un cantant, compositor, productor discogràfic i lluitador porto-riqueny. Caracteritzat per la seva entonació<br>greu, es dedica a estils musicals com el reggaeton i el trap llatí, encara que també ha interpretat altres gèneres i estils variats.
+            </p>
+        </div>
+    </section>
+
+    <section class="Apartado songs">
+        <h1>SONGS</h1>
+        <div class="ContainerSongs">
+            <ul id="listacanciones">
+                
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 VIDEOTEQUE. Tots els drets reservats.</p>
+    </footer>
+    
+    <script src="data.js"></script>
+    <script src="JsProjecte1.js"></script>
+
+</body>
+</html>
+
+
